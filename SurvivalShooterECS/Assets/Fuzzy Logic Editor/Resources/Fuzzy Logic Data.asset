@@ -949,7 +949,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       _membershipFunction: 3
-    showInInspector: 0
+    showInInspector: 1
     validName: 1
     oldStart: 0
     oldEnd: 100
@@ -2361,10 +2361,10 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       _membershipFunction: 2
-    showInInspector: 1
+    showInInspector: 0
     validName: 1
-    oldStart: 0.5
-    oldEnd: 1
+    oldStart: 0
+    oldEnd: 3
   - name: veloAtaque
     fuzzySets:
     - name: muitoLenta
@@ -2881,8 +2881,8 @@ MonoBehaviour:
       _membershipFunction: 2
     showInInspector: 0
     validName: 1
-    oldStart: 0.5
-    oldEnd: 100
+    oldStart: 0
+    oldEnd: 3
   rules:
   - id: Rule 0
     antecedents:

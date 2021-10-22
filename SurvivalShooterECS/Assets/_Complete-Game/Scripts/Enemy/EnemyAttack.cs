@@ -6,8 +6,12 @@ namespace CompleteProject
 {
     public class EnemyAttack : MonoBehaviour
     {
-        public float timeBetweenAttacks = 0.5f;     // The time in seconds between each attack.
-        public int attackDamage = 10;               // The amount of health taken away per attack.
+        public float timeBetweenAttacksDefault = 0.5f;
+        public float timeBetweenAttacks;     // The time in seconds between each attack.
+
+        public float attackDamageDefault = 10f;
+        public float attackDamage;              // The amount of health taken away per attack.
+
 
 
         Animator anim;                              // Reference to the animator component.
@@ -25,6 +29,8 @@ namespace CompleteProject
             playerHealth = player.GetComponent <PlayerHealth> ();
             enemyHealth = GetComponent<EnemyHealth>();
             anim = GetComponent <Animator> ();
+            attackDamage = attackDamageDefault;
+            timeBetweenAttacks = timeBetweenAttacksDefault;
         }
 
 

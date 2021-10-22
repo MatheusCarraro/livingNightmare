@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
+using UnityEngine.AI;
 
 public class Manager : MonoBehaviour
 {
@@ -50,16 +51,19 @@ public class Manager : MonoBehaviour
         }
     }
 
-    public static void setAttributesGain(string id, string json) {
+    public static void setAttributesGain(GameObject gameObject, string json) {
         setFuzzyInput(json);
 
         var movimento = FIS.Evaluate("movimento");
         var dano = FIS.Evaluate("dano");
         var veloAtaque = FIS.Evaluate("veloAtaque");
 
-        Debug.Log($"Movimento: {movimento}");
-        Debug.Log($"Dano: {dano}");
-        Debug.Log($"Velocidade de Ataque: {veloAtaque}");
+        // attack.attackDamage = attack.attackDamage * dano;
+        // attack.timeBetweenAttacks = attack.timeBetweenAttacks / veloAtaque;
+
+        gameObject.GetComponent<CompleteProject.EnemyAttack>().attackDamage = gameObject.GetComponent<CompleteProject.EnemyAttack>().attackDamageDefault * dano;
+        gameObject.GetComponent<CompleteProject.EnemyAttack>().timeBetweenAttacks = gameObject.GetComponent<CompleteProject.EnemyAttack>().timeBetweenAttacks / veloAtaque;
+        gameObject.GetComponent<NavMeshAgent>().speed = 3 * movimento;
     }
     public static void setFuzzyInput(string json) {
         string [] emotions = {"joy", "relief", "distress", "disappointment", "fear-confirmed", "anger", "satisfaction"};

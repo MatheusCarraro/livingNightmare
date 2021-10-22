@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnitySampleAssets.CrossPlatformInput;
 using Newtonsoft.Json;
+using UnityEngine.AI;
 
 
 namespace CompleteProject
@@ -106,6 +107,9 @@ namespace CompleteProject
             {
                 // Try and find an EnemyHealth script on the gameobject hit.
                 EnemyHealth enemyHealth = shootHit.collider.GetComponent <EnemyHealth> ();
+                // EnemyAttack enemyAtack = shootHit.collider.GetComponent <EnemyAttack> ();
+                // NavMeshAgent enemyMovement = shootHit.collider.GetComponent<NavMeshAgent> ();
+
                 var engine = Manager.instance.engine;
                 
                 // If the EnemyHealth component exist...
@@ -132,7 +136,7 @@ namespace CompleteProject
 
                         // Printa no console o estado emocional do coelho
                         var msgJson = engine.Evaluate("estadoEmocional('coelho')");
-                        Manager.setAttributesGain(agente, msgJson.ToString());
+                        Manager.setAttributesGain(enemyHealth.gameObject, msgJson.ToString());
                         Debug.Log($"{agente}: " + msgJson);
                         // Debug.Log($"{agente}: " + engine.Evaluate("estadoEmocional('coelho')"));
                     }
