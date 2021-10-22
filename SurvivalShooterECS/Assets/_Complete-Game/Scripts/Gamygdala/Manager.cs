@@ -46,24 +46,34 @@ public class Manager : MonoBehaviour
 
         if (Time.time >= update) {            
             engine.Execute("gamygdalaEngine.decayAll()");
-
             update += interval;
         }
     }
 
     public static void setAttributesGain(GameObject gameObject, string json) {
-        setFuzzyInput(json);
+        // setFuzzyInput(json);
+        FIS.SetInput("joy", 0f);
+        FIS.SetInput("relief", 0f);
+        FIS.SetInput("distress", 0f);
+        FIS.SetInput("disappointment", 1f);
+        FIS.SetInput("fear-confirmed", 0f);
+        FIS.SetInput("anger", 1f);
+        FIS.SetInput("satisfaction", 0f);
 
-        var movimento = FIS.Evaluate("movimento");
+        var movimento = FIS.Evaluate("movimento") * 1.4f;
         var dano = FIS.Evaluate("dano");
         var veloAtaque = FIS.Evaluate("veloAtaque");
+        Debug.Log($"Emoção: {json}");
+        Debug.Log($"movimento: {movimento}");
+        Debug.Log($"dano: {dano}");
+        Debug.Log($"veloAtaque: {veloAtaque}");
 
-        // attack.attackDamage = attack.attackDamage * dano;
-        // attack.timeBetweenAttacks = attack.timeBetweenAttacks / veloAtaque;
 
         gameObject.GetComponent<CompleteProject.EnemyAttack>().attackDamage = gameObject.GetComponent<CompleteProject.EnemyAttack>().attackDamageDefault * dano;
         gameObject.GetComponent<CompleteProject.EnemyAttack>().timeBetweenAttacks = gameObject.GetComponent<CompleteProject.EnemyAttack>().timeBetweenAttacks / veloAtaque;
         gameObject.GetComponent<NavMeshAgent>().speed = 3 * movimento;
+        gameObject.GetComponent<NavMeshAgent>().angularSpeed = 120 * movimento;
+        gameObject.GetComponent<NavMeshAgent>().acceleration = 8 * movimento;
     }
     public static void setFuzzyInput(string json) {
         string [] emotions = {"joy", "relief", "distress", "disappointment", "fear-confirmed", "anger", "satisfaction"};

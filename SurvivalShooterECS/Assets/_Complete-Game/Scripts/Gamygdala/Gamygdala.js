@@ -15,7 +15,7 @@ TUDelft.Gamygdala = function () {
     this.agents = [];
 	this.goals=[];
 	this.decayFunction=this.exponentialDecay;
-	this.decayFactor=0.99;
+	this.decayFactor=0.8;
 	this.lastMillis=Date.now();
 	this.millisPassed;
 	this.debug;
@@ -1084,10 +1084,14 @@ function appraise(crenca, agente) {
 		case "urso":
 			if (crenca == "serAtacado")
 				urso[id].serAtacado();
+			if (crenca == "atacouJogador")
+				gamygdalaEngine.appraiseBelief(0.7, id, ['matarJogador'], [0.75], true)
 			break;
 		case "elefante":
 			if (crenca == "serAtacado")
 				elefante[id].serAtacado();
+			if (crenca == "atacouJogador")
+				gamygdalaEngine.appraiseBelief(0.7, id, ['matarJogador'], [0.75], true)
 		default:
 			break;
 	}

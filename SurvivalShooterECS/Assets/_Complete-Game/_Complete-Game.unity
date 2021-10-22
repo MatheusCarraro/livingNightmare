@@ -2467,7 +2467,12 @@ PrefabInstance:
     - target: {fileID: 5310166790772277114, guid: 8a762715e7843428d8d145779bec63e3,
         type: 3}
       propertyPath: PlayerMoveSpeed
-      value: 50000
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5310166790772277114, guid: 8a762715e7843428d8d145779bec63e3,
+        type: 3}
+      propertyPath: StartingEnemyHealth
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5310166790772277115, guid: 8a762715e7843428d8d145779bec63e3,
         type: 3}
