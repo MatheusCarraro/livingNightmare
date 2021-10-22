@@ -106,7 +106,6 @@
      <Compile Include="Assets\_Complete-Game\Scripts\Enemy\EnemyAttack.cs" />
      <Compile Include="Assets\_Complete-Game\Scripts\Enemy\EnemyHealth.cs" />
      <Compile Include="Assets\_Complete-Game\Scripts\Enemy\EnemyMovement.cs" />
-     <Compile Include="Assets\_Complete-Game\Scripts\Fuzzy\Fuzzification.cs" />
      <Compile Include="Assets\_Complete-Game\Scripts\Gamygdala\Manager.cs" />
      <Compile Include="Assets\_Complete-Game\Scripts\Helpers\RandomAnimationPoint.cs" />
      <Compile Include="Assets\_Complete-Game\Scripts\Helpers\RandomParticlePoint.cs" />
@@ -337,22 +336,22 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
  </Reference>
  <Reference Include="AForge">
- <HintPath>C:/Users/Maefs/Documents/TCC/Survival Shooter/SurvivalShooterECS-master/SurvivalShooterECS/Assets/Fuzzy Logic Editor/AForge.Fuzzy/AForge.dll</HintPath>
+ <HintPath>C:/Users/Maefs/Documents/TCC/livingNightmare/SurvivalShooterECS/Assets/Fuzzy Logic Editor/AForge.Fuzzy/AForge.dll</HintPath>
  </Reference>
  <Reference Include="AForge.Fuzzy">
- <HintPath>C:/Users/Maefs/Documents/TCC/Survival Shooter/SurvivalShooterECS-master/SurvivalShooterECS/Assets/Fuzzy Logic Editor/AForge.Fuzzy/AForge.Fuzzy.dll</HintPath>
+ <HintPath>C:/Users/Maefs/Documents/TCC/livingNightmare/SurvivalShooterECS/Assets/Fuzzy Logic Editor/AForge.Fuzzy/AForge.Fuzzy.dll</HintPath>
  </Reference>
  <Reference Include="Jurassic">
- <HintPath>C:/Users/Maefs/Documents/TCC/Survival Shooter/SurvivalShooterECS-master/SurvivalShooterECS/Assets/Plugins/Jurassic.dll</HintPath>
+ <HintPath>C:/Users/Maefs/Documents/TCC/livingNightmare/SurvivalShooterECS/Assets/Plugins/Jurassic.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/Maefs/Documents/TCC/Survival Shooter/SurvivalShooterECS-master/SurvivalShooterECS/Assets/Plugins/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/Maefs/Documents/TCC/livingNightmare/SurvivalShooterECS/Assets/Plugins/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Burst.Unsafe">
- <HintPath>C:/Users/Maefs/Documents/TCC/Survival Shooter/SurvivalShooterECS-master/SurvivalShooterECS/Library/PackageCache/com.unity.burst@1.3.0-preview.7/Unity.Burst.Unsafe.dll</HintPath>
+ <HintPath>C:/Users/Maefs/Documents/TCC/livingNightmare/SurvivalShooterECS/Library/PackageCache/com.unity.burst@1.3.0-preview.7/Unity.Burst.Unsafe.dll</HintPath>
  </Reference>
  <Reference Include="System.Runtime.CompilerServices.Unsafe">
- <HintPath>C:/Users/Maefs/Documents/TCC/Survival Shooter/SurvivalShooterECS-master/SurvivalShooterECS/Library/PackageCache/com.unity.collections@0.7.1-preview.3/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+ <HintPath>C:/Users/Maefs/Documents/TCC/livingNightmare/SurvivalShooterECS/Library/PackageCache/com.unity.collections@0.7.1-preview.3/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

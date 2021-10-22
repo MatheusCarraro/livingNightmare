@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fuzzy Logic Data
   m_EditorClassIdentifier: 
   linguisticVariables:
-  - name: alegria
+  - name: joy
     fuzzySets:
     - name: emoHigh
       values:
@@ -201,7 +201,7 @@ MonoBehaviour:
     validName: 1
     oldStart: 0
     oldEnd: 100
-  - name: alivio
+  - name: relief
     fuzzySets:
     - name: emoHigh
       values:
@@ -389,7 +389,7 @@ MonoBehaviour:
     validName: 1
     oldStart: 0
     oldEnd: 100
-  - name: angustia
+  - name: distress
     fuzzySets:
     - name: emoHigh
       values:
@@ -577,7 +577,7 @@ MonoBehaviour:
     validName: 1
     oldStart: 0
     oldEnd: 100
-  - name: frustracao
+  - name: disappointment
     fuzzySets:
     - name: emoHigh
       values:
@@ -765,7 +765,7 @@ MonoBehaviour:
     validName: 1
     oldStart: 0
     oldEnd: 100
-  - name: medosConfirmados
+  - name: fear-confirmed
     fuzzySets:
     - name: emoHigh
       values:
@@ -953,7 +953,7 @@ MonoBehaviour:
     validName: 1
     oldStart: 0
     oldEnd: 100
-  - name: raiva
+  - name: anger
     fuzzySets:
     - name: emoHigh
       values:
@@ -1141,7 +1141,7 @@ MonoBehaviour:
     validName: 1
     oldStart: 0
     oldEnd: 100
-  - name: satisfacao
+  - name: satisfaction
     fuzzySets:
     - name: emoHigh
       values:
@@ -1335,7 +1335,7 @@ MonoBehaviour:
       values:
       - 0.5
       - 0.875
-      showInInspector: 0
+      showInInspector: 1
       validName: 1
       graph:
         serializedVersion: 2
@@ -1427,7 +1427,7 @@ MonoBehaviour:
       - 0.5
       - 0.875
       - 1.25
-      showInInspector: 0
+      showInInspector: 1
       validName: 1
       graph:
         serializedVersion: 2
@@ -1537,7 +1537,7 @@ MonoBehaviour:
       - 0.875
       - 1.25
       - 1.625
-      showInInspector: 0
+      showInInspector: 1
       validName: 1
       graph:
         serializedVersion: 2
@@ -1647,7 +1647,7 @@ MonoBehaviour:
       - 1.25
       - 1.625
       - 2
-      showInInspector: 0
+      showInInspector: 1
       validName: 1
       graph:
         serializedVersion: 2
@@ -1756,7 +1756,7 @@ MonoBehaviour:
       values:
       - 1.625
       - 2
-      showInInspector: 0
+      showInInspector: 1
       validName: 1
       graph:
         serializedVersion: 2
@@ -1845,8 +1845,8 @@ MonoBehaviour:
       _membershipFunction: 2
     showInInspector: 0
     validName: 1
-    oldStart: 0.5
-    oldEnd: 1
+    oldStart: 0
+    oldEnd: 100
   - name: dano
     fuzzySets:
     - name: muitoBaixo
@@ -2361,7 +2361,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       _membershipFunction: 2
-    showInInspector: 0
+    showInInspector: 1
     validName: 1
     oldStart: 0.5
     oldEnd: 1
@@ -2951,7 +2951,7 @@ MonoBehaviour:
       clauses: []
       showInInspector: 0
       hover: 0
-    showInInspector: 0
+    showInInspector: 1
   - id: Rule 1
     antecedents:
     - not: 0
@@ -28995,4 +28995,4 @@ MonoBehaviour:
       clauses: []
       showInInspector: 0
       hover: 0
-    showInInspector: 1
+    showInInspector: 0

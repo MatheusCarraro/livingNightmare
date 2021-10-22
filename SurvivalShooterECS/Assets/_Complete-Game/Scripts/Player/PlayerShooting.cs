@@ -132,7 +132,8 @@ namespace CompleteProject
 
                         // Printa no console o estado emocional do coelho
                         var msgJson = engine.Evaluate("estadoEmocional('coelho')");
-                        Debug.Log($"{agente}: " + msgJson.GetType());
+                        Manager.setAttributesGain(agente, msgJson.ToString());
+                        Debug.Log($"{agente}: " + msgJson);
                         // Debug.Log($"{agente}: " + engine.Evaluate("estadoEmocional('coelho')"));
                     }
 
