@@ -197,10 +197,10 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       _membershipFunction: 3
-    showInInspector: 0
+    showInInspector: 1
     validName: 1
     oldStart: 0
-    oldEnd: 1
+    oldEnd: 100
   - name: relief
     fuzzySets:
     - name: emoHigh
@@ -388,7 +388,7 @@ MonoBehaviour:
     showInInspector: 0
     validName: 1
     oldStart: 0
-    oldEnd: 1
+    oldEnd: 100
   - name: distress
     fuzzySets:
     - name: emoHigh
@@ -576,7 +576,7 @@ MonoBehaviour:
     showInInspector: 0
     validName: 1
     oldStart: 0
-    oldEnd: 1
+    oldEnd: 100
   - name: disappointment
     fuzzySets:
     - name: emoHigh
@@ -764,7 +764,7 @@ MonoBehaviour:
     showInInspector: 0
     validName: 1
     oldStart: 0
-    oldEnd: 1
+    oldEnd: 100
   - name: fear-confirmed
     fuzzySets:
     - name: emoHigh
@@ -952,7 +952,7 @@ MonoBehaviour:
     showInInspector: 0
     validName: 1
     oldStart: 0
-    oldEnd: 1
+    oldEnd: 100
   - name: anger
     fuzzySets:
     - name: emoHigh
@@ -1140,7 +1140,7 @@ MonoBehaviour:
     showInInspector: 0
     validName: 1
     oldStart: 0
-    oldEnd: 1
+    oldEnd: 100
   - name: satisfaction
     fuzzySets:
     - name: emoHigh
@@ -1328,7 +1328,7 @@ MonoBehaviour:
     showInInspector: 0
     validName: 1
     oldStart: 0
-    oldEnd: 1
+    oldEnd: 100
   - name: movimento
     fuzzySets:
     - name: muitoDevagar
@@ -1846,7 +1846,7 @@ MonoBehaviour:
     showInInspector: 0
     validName: 1
     oldStart: 0.5
-    oldEnd: 2
+    oldEnd: 100
   - name: dano
     fuzzySets:
     - name: muitoBaixo
@@ -2364,7 +2364,7 @@ MonoBehaviour:
     showInInspector: 0
     validName: 1
     oldStart: 0.5
-    oldEnd: 2
+    oldEnd: 100
   - name: veloAtaque
     fuzzySets:
     - name: muitoLenta
@@ -2879,10 +2879,10 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       _membershipFunction: 2
-    showInInspector: 1
+    showInInspector: 0
     validName: 1
     oldStart: 0.5
-    oldEnd: 2
+    oldEnd: 100
   rules:
   - id: Rule 0
     antecedents:

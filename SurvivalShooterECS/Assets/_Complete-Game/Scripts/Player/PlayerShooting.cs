@@ -134,10 +134,12 @@ namespace CompleteProject
                         engine.Execute("gamygdalaEngine.appraiseBelief(1, 'jogador', ['coelhoMorrerUrso', 'jogadorPontuar'], [0.5, 0.5], true)");
                         // Debug.Log("Crença coelhoSofreDanoUrso acionada.");
 
-                        // Printa no console o estado emocional do coelho
-                        var msgJson = engine.Evaluate("estadoEmocional('coelho')");
-                        Manager.setAttributesGain(enemyHealth.gameObject, msgJson.ToString());
-                        // Debug.Log($"{agente}: " + msgJson);
+                        // // Printa no console o estado emocional do coelho
+                        // var msgJson = engine.Evaluate("estadoEmocional('coelho')");
+                        // Manager.setAttributesGain(enemyHealth.gameObject, msgJson.ToString());
+
+                        AgentsManager.instance.updateEmotionalState();
+
                     }
 
                     if (enemyHealth.name == "ZomBear(Clone)") {
@@ -157,10 +159,10 @@ namespace CompleteProject
                             engine.Execute("gamygdalaEngine.appraiseBelief(1, 'jogador', ['ursoMorrerElefante'], [0.5], true)");
                             // Debug.Log("Crença ursoSofreDanoElefante acionada.");
                         }
-                        // Printa no console o estado emocional do coelho
-                        var msgJson = engine.Evaluate("estadoEmocional('urso')");
-                        Manager.setAttributesGain(enemyHealth.gameObject, msgJson.ToString());
-                        // Debug.Log($"{agente}: " + msgJson);
+                        // // Printa no console o estado emocional do coelho
+                        // var msgJson = engine.Evaluate("estadoEmocional('urso')");
+                        // Manager.setAttributesGain(enemyHealth.gameObject, msgJson.ToString());
+                        AgentsManager.instance.updateEmotionalState();
                     }
 
                     if (enemyHealth.name == "Hellephant(Clone)") {
@@ -170,9 +172,9 @@ namespace CompleteProject
                         // Crença = serAtacadoElefante
                         engine.Execute("appraise('serAtacado', 'elefante')");
 
-                        var msgJson = engine.Evaluate("estadoEmocional('elefante')");
-                        Manager.setAttributesGain(enemyHealth.gameObject, msgJson.ToString());
-                        // Debug.Log($"{agente}: " + msgJson);
+                        // var msgJson = engine.Evaluate("estadoEmocional('elefante')");
+                        // Manager.setAttributesGain(enemyHealth.gameObject, msgJson.ToString());
+                        AgentsManager.instance.updateEmotionalState();
                     }
 
                 }

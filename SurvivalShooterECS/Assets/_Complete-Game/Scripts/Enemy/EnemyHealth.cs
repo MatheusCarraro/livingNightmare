@@ -66,38 +66,7 @@ namespace CompleteProject
             {
                 // ... the enemy is dead.
                 Death ();
-
-                var engine = Manager.instance.engine;
-
-                Debug.Log("Morto id: "+gameObject.GetInstanceID());
-
-                if (gameObject.name == "ZomBunny(Clone)") {
-                    // Crença = coelhoMortoUrso
-                    engine.Execute("gamygdalaEngine.appraiseBelief(0.75, 'jogador', ['coelhoMorrerUrso', 'jogadorPontuar'], [1, 1], true)");
-                    // Debug.Log("Crença coelhoMortoUrso acionada.");
-                    // Crença = coelhoMortoElefante
-                    engine.Execute("gamygdalaEngine.appraiseBelief(0.75, 'jogador', ['coelhoMorrerElefante'], [1], true)");
-                    // Debug.Log("Crença coelhoMortoElefante acionada.");
-
-                    Manager.coelho = 0;
-                }
-
-                if (gameObject.name == "ZomBear(Clone)") {
-                    // Crença = ursoMortoCoelho
-                    engine.Execute("gamygdalaEngine.appraiseBelief(0.9, 'jogador', ['ursoMorrerCoelho', 'jogadorPontuar'], [1, 1], true)");
-                    // Debug.Log("Crença ursoMortoCoelho acionada.");
-                    // Crença = ursoMortoElefante
-                    engine.Execute("gamygdalaEngine.appraiseBelief(0.75, 'jogador', ['coelhoMorrerElefante'], [1], true)");
-                    // Debug.Log("Crença ursoMortoElefante acionada.");
-                    
-                    Manager.urso = 0;
-                    
-                }
-
-                if (gameObject.name == "Hellephant(Clone)") {
-                    Manager.elefante = 0;
-                }
-                
+                AgentsManager.instance.agentIsDead(gameObject);
             }
         }
 

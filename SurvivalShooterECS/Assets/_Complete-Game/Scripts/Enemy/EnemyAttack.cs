@@ -69,44 +69,8 @@ namespace CompleteProject
             {
                 // ... attack.
                 Attack ();
-
-                if (enemyHealth.name == "ZomBunny(Clone)") {
-                    // Seta globalmente o agente atacado
-                    var agente = "coelho" + enemyHealth.gameObject.GetInstanceID();
-                    engine.SetGlobalValue("id", agente);
-
-                    if (playerHealth.currentHealth <= 30) {
-                        engine.Execute("appraise('vidaJogador30', 'coelho')");
-                    }
-
-                    engine.Execute("appraise('atacouJogador', 'coelho')");
-                    Debug.Log($"{agente} atacou o jogador");
-                    var msgJson = engine.Evaluate("estadoEmocional('coelho')");
-                    Manager.setAttributesGain(enemyHealth.gameObject, msgJson.ToString());
-                }
-
-                if (enemyHealth.name == "ZomBear(Clone)") {
-                    // Seta globalmente o agente atacado
-                    var agente = "urso" + enemyHealth.gameObject.GetInstanceID();
-                    engine.SetGlobalValue("id", agente);
-
-                    engine.Execute("appraise('atacouJogador', 'urso')");
-                    Debug.Log($"{agente} atacou o jogador");
-                    var msgJson = engine.Evaluate("estadoEmocional('urso')");
-                    Manager.setAttributesGain(enemyHealth.gameObject, msgJson.ToString());
-
-                }
-
-                if (enemyHealth.name == "Hellephant(Clone)") {
-                    // Seta globalmente o agente atacado
-                    var agente = "elefante" + enemyHealth.gameObject.GetInstanceID();
-                    engine.SetGlobalValue("id", agente);
-
-                    engine.Execute("appraise('atacouJogador', 'elefante')");
-                    Debug.Log($"{agente} atacou o jogador");
-                    var msgJson = engine.Evaluate("estadoEmocional('elefante')");
-                    Manager.setAttributesGain(enemyHealth.gameObject, msgJson.ToString());
-                }
+                AgentsManager.instance.agentTakeDamage(gameObject, playerHealth);
+                
             }
 
             

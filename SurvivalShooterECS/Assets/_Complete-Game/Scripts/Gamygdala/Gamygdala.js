@@ -1018,7 +1018,7 @@ class UrsoZumbi {
 	}
 
 	criaMetas() {
-		gamygdalaEngine.createGoalForAgent(this.id, 'jogadorColetaRecurso', 1, true)
+		gamygdalaEngine.createGoalForAgent(this.id, 'matarJogador', 1, true)
 		gamygdalaEngine.createGoalForAgent(this.id, 'jogadorPontuar', -0.25, true)
 		gamygdalaEngine.createGoalForAgent(this.id, 'coelhoMorrerUrso', 0.5, true)
 		gamygdalaEngine.createGoalForAgent(this.id, 'ficarVivo'+this.id, 0.75, false)

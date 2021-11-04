@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace CompleteProject
 {
@@ -9,13 +9,19 @@ namespace CompleteProject
         public float spawnTime = 1f;            // How long between each spawn.
         public Transform[] spawnPoints;         // An array of the spawn points this enemy can spawn from.
 
+        private int invoker = 0;
+
         
 
         void Start ()
         {
             // Call the Spawn function after a delay of the spawnTime and then continue to call after the same amount of time.
-            InvokeRepeating("Spawn", spawnTime, spawnTime);
-            // Invoke("Spawn", spawnTime);
+            // InvokeRepeating("Spawn", spawnTime, spawnTime);
+            
+            Invoke("Spawn", spawnTime);
+            Invoke("Spawn", spawnTime);
+            Invoke("Spawn", spawnTime);
+            Invoke("Spawn", spawnTime);
         }
 
 
@@ -38,32 +44,25 @@ namespace CompleteProject
             if (enemy.name == "ZomBunny") {
                 var agente = "coelho" + guilhermeDelicinhaQueEuAmoMuitoObrigado.GetInstanceID();
                 engine.SetGlobalValue("id", agente);
-                // Debug.Log("Agente criado: "+ agente);
-
-                // engine.Execute($"var {agente} = gamygdalaEngine.createAgent(id)");
-                // Debug.Log("Gamygdala: " + engine.Evaluate("criaAgenteCoelho()"));
                 engine.Execute("criaAgenteCoelho()");
                 Manager.coelho = 1;
+                AgentsManager.instance.addActiveAgents(guilhermeDelicinhaQueEuAmoMuitoObrigado);
             }
 
             if (enemy.name == "ZomBear") {
                 var agente = "urso" + guilhermeDelicinhaQueEuAmoMuitoObrigado.GetInstanceID();
                 engine.SetGlobalValue("id", agente);
-                // Debug.Log("Agente criado: "+ agente);
-
-                // Debug.Log("Gamygdala: " + engine.Evaluate("criaAgenteUrso()"));
                 engine.Execute("criaAgenteUrso()");
                 Manager.urso = 1;
+                AgentsManager.instance.addActiveAgents(guilhermeDelicinhaQueEuAmoMuitoObrigado);
             }
 
             if (enemy.name == "Hellephant") {
                 var agente = "elefante" + guilhermeDelicinhaQueEuAmoMuitoObrigado.GetInstanceID();
                 engine.SetGlobalValue("id", agente);
-                // Debug.Log("Agente criado: "+ agente);
-
-                // Debug.Log("Gamygdala: " + engine.Evaluate("criaAgenteElefante()"));
                 engine.Execute("criaAgenteElefante()");
                 Manager.elefante = 1;
+                AgentsManager.instance.addActiveAgents(guilhermeDelicinhaQueEuAmoMuitoObrigado);
             }
         }
     }
