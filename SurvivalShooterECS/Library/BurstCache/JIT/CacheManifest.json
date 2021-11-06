@@ -4,7 +4,7 @@
     {
       "FullName": "Unity.Entities, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
       "FilePath": "C:\\Users\\Maefs\\Documents\\TCC\\livingNightmare\\livingNightmare\\SurvivalShooterECS\\Library\\ScriptAssemblies\\Unity.Entities.dll",
-      "LastWriteTime": "2021-11-01T23:15:26.732448Z"
+      "LastWriteTime": "1601-01-01T00:00:00Z"
     },
     {
       "FullName": "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
@@ -19,7 +19,7 @@
     {
       "FullName": "Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
       "FilePath": "C:\\Users\\Maefs\\Documents\\TCC\\livingNightmare\\livingNightmare\\SurvivalShooterECS\\Library\\ScriptAssemblies\\Unity.Collections.dll",
-      "LastWriteTime": "2021-11-01T23:15:17.1485517Z"
+      "LastWriteTime": "1601-01-01T00:00:00Z"
     },
     {
       "FullName": "mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
@@ -28,17 +28,17 @@
     },
     {
       "FullName": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "FilePath": "C:\\Users\\Maefs\\Documents\\TCC\\livingNightmare\\livingNightmare\\SurvivalShooterECS\\Library\\ScriptAssemblies\\Assembly-CSharp.dll",
-      "LastWriteTime": "2021-11-03T23:08:45.5448334Z"
+      "FilePath": "C:\\Users\\Maefs\\Documents\\TCC\\livingNightmare\\livingNightmare\\livingNightmare\\SurvivalShooterECS\\Library\\ScriptAssemblies\\Assembly-CSharp.dll",
+      "LastWriteTime": "2021-11-06T19:46:01.4559941Z"
     },
     {
       "FullName": "Unity.Mathematics, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "FilePath": "C:\\Users\\Maefs\\Documents\\TCC\\livingNightmare\\livingNightmare\\SurvivalShooterECS\\Library\\ScriptAssemblies\\Unity.Mathematics.dll",
-      "LastWriteTime": "2021-11-01T23:15:16.7231632Z"
+      "FilePath": "C:\\Users\\Maefs\\Documents\\TCC\\livingNightmare\\livingNightmare\\livingNightmare\\SurvivalShooterECS\\Library\\ScriptAssemblies\\Unity.Mathematics.dll",
+      "LastWriteTime": "2021-11-06T19:37:19.9051228Z"
     },
     {
       "FullName": "System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
-      "FilePath": "C:\\Users\\Maefs\\Documents\\TCC\\livingNightmare\\livingNightmare\\SurvivalShooterECS\\Library\\PackageCache\\com.unity.collections@0.7.1-preview.3\\System.Runtime.CompilerServices.Unsafe.dll",
+      "FilePath": "C:\\Users\\Maefs\\Documents\\TCC\\livingNightmare\\livingNightmare\\livingNightmare\\SurvivalShooterECS\\Library\\PackageCache\\com.unity.collections@0.7.1-preview.3\\System.Runtime.CompilerServices.Unsafe.dll",
       "LastWriteTime": "2020-04-09T17:14:37Z"
     },
     {
@@ -49,12 +49,12 @@
     {
       "FullName": "Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
       "FilePath": "C:\\Users\\Maefs\\Documents\\TCC\\livingNightmare\\livingNightmare\\SurvivalShooterECS\\Library\\ScriptAssemblies\\Unity.Burst.dll",
-      "LastWriteTime": "2021-11-01T23:15:15.1686982Z"
+      "LastWriteTime": "1601-01-01T00:00:00Z"
     },
     {
       "FullName": "Unity.Burst.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=null",
       "FilePath": "C:\\Users\\Maefs\\Documents\\TCC\\livingNightmare\\livingNightmare\\SurvivalShooterECS\\Library\\PackageCache\\com.unity.burst@1.3.0-preview.7\\Unity.Burst.Unsafe.dll",
-      "LastWriteTime": "2020-03-16T15:53:27Z"
+      "LastWriteTime": "1601-01-01T00:00:00Z"
     }
   ],
   "Functions": [
@@ -74,7 +74,7 @@
     {
       "FullName": "System.Void PlayerShootingSystem/<>c__DisplayClass_OnUpdate_LambdaJob0::RunWithoutJobSystem(Unity.Entities.ArchetypeChunkIterator*,System.Void*)",
       "ModuleOptionsHash": 10400676583197497630,
-      "ModuleHash": "6b08a4d7469b1a91735ec84634438867",
+      "ModuleHash": "27cdba538b921507ffd2586b32d5c2c7",
       "LinkName": "C2CF5EB0E012704D",
       "AssemblyDependencyIndices": [
         5,

@@ -40,30 +40,38 @@ public class AgentsManager : MonoBehaviour
         var engine = Manager.instance.engine;
         foreach (var item in activeAgents)
         {
-            Debug.Log(item.name);
+            // Debug.Log(item.name);
             if (item.name == "ZomBunny(Clone)") {
                 var agente = "coelho" + item.GetInstanceID();
                 engine.SetGlobalValue("id", agente);
                 var msgJson = engine.Evaluate("estadoEmocional('coelho')");
-                setAttributesGain(item, msgJson.ToString());
+                if (msgJson.ToString() != "[]"){
+                    setAttributesGain(item, msgJson.ToString());
+                }
             }
-            else if (item.name == "ZomBear(Clone)") {
+            if (item.name == "ZomBear(Clone)") {
                 var agente = "urso" + item.GetInstanceID();
                 engine.SetGlobalValue("id", agente);
                 var msgJson = engine.Evaluate("estadoEmocional('urso')");
-                setAttributesGain(item, msgJson.ToString());
+                if (msgJson.ToString() != "[]"){
+                    setAttributesGain(item, msgJson.ToString());
+                }
             }
-            else {
+            if (item.name == "Hellephant(Clone)") {
                 var agente = "elefante" + item.GetInstanceID();
                 engine.SetGlobalValue("id", agente);
                 var msgJson = engine.Evaluate("estadoEmocional('elefante')");
-                setAttributesGain(item, msgJson.ToString());
+                if (msgJson.ToString() != "[]"){
+                    setAttributesGain(item, msgJson.ToString());
+                }
             }
         }
     }
 
        private void setAttributesGain(GameObject gameObject, string json) {
+        // Debug.Log($"setAttributesGain: {json}");
         string strongestEmo = setFuzzyInput(json);
+        // Debug.Log(($"setAttributesGain strongestEmo: {strongestEmo}"));
 
         var movimento = FIS.Evaluate("movimento");
         var dano = FIS.Evaluate("dano");
@@ -85,6 +93,7 @@ public class AgentsManager : MonoBehaviour
     }
     private string setFuzzyInput(string json) {
         string [] emotions = {"joy", "relief", "distress", "disappointment", "fear-confirmed", "anger", "satisfaction"};
+        // Debug.Log($"setFuzzyInput: {json}");
 
         var emotionList = JsonConvert.DeserializeObject<List<dynamic>>(json);
         
@@ -96,6 +105,7 @@ public class AgentsManager : MonoBehaviour
                 FIS.SetInput(item, 0f);
             } else {
                 FIS.SetInput(item, (float) emoIntensity.intensity);
+                // Debug.Log($"Emoção {emoIntensity.name}: {emoIntensity.intensity}");
             }
         }
         
@@ -103,6 +113,7 @@ public class AgentsManager : MonoBehaviour
     }
 
     private void setCharactersColor(string strongestEmo) {
+        // Debug.Log("MAIOR EMOÇÃO: "+strongestEmo);
         switch (strongestEmo)
         {
             case "joy":
@@ -161,7 +172,7 @@ public class AgentsManager : MonoBehaviour
 
     public void agentTakeDamage(GameObject gameObject, CompleteProject.PlayerHealth playerHealth ) {
         var engine = Manager.instance.engine;
-        Debug.Log(gameObject.GetInstanceID());
+        // Debug.Log(gameObject.GetInstanceID());
         if (gameObject.name == "ZomBunny(Clone)") {
             // Seta globalmente o agente atacado
             var agente = "coelho" + gameObject.GetInstanceID();
@@ -174,7 +185,7 @@ public class AgentsManager : MonoBehaviour
             engine.Execute("appraise('atacouJogador', 'coelho')");
             // Debug.Log($"{agente} atacou o jogador");
             var msgJson = engine.Evaluate("estadoEmocional('coelho')");
-            Debug.Log(msgJson);
+            // Debug.Log($"agentTakeDamage {msgJson}");
         }
 
         if (gameObject.name == "ZomBear(Clone)") {
