@@ -31,6 +31,7 @@ public class Manager : MonoBehaviour
         coelho = 0;
         urso = 0;
         elefante = 0;
+        FIS.Initialize();
     }
     // Start is called before the first frame update
     void Start()

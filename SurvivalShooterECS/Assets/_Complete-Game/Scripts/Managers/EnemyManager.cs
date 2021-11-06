@@ -19,9 +19,9 @@ namespace CompleteProject
             // InvokeRepeating("Spawn", spawnTime, spawnTime);
             
             Invoke("Spawn", spawnTime);
-            Invoke("Spawn", spawnTime);
-            Invoke("Spawn", spawnTime);
-            Invoke("Spawn", spawnTime);
+            // Invoke("Spawn", spawnTime);
+            // Invoke("Spawn", spawnTime);
+            // Invoke("Spawn", spawnTime);
         }
 
 

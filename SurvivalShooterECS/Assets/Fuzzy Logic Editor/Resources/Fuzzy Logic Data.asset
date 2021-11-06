@@ -197,7 +197,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       _membershipFunction: 3
-    showInInspector: 1
+    showInInspector: 0
     validName: 1
     oldStart: 0
     oldEnd: 100
@@ -761,7 +761,7 @@ MonoBehaviour:
         m_PostInfinity: 2
         m_RotationOrder: 4
       _membershipFunction: 3
-    showInInspector: 0
+    showInInspector: 1
     validName: 1
     oldStart: 0
     oldEnd: 100
@@ -1846,7 +1846,7 @@ MonoBehaviour:
     showInInspector: 0
     validName: 1
     oldStart: 0.5
-    oldEnd: 100
+    oldEnd: 4
   - name: dano
     fuzzySets:
     - name: muitoBaixo
@@ -21039,7 +21039,7 @@ MonoBehaviour:
       clauses: []
       showInInspector: 0
       hover: 0
-    showInInspector: 1
+    showInInspector: 0
   - id: Rule 267
     antecedents:
     - not: 0
@@ -28383,7 +28383,7 @@ MonoBehaviour:
       clauses: []
       showInInspector: 0
       hover: 0
-    showInInspector: 0
+    showInInspector: 1
   - id: Rule 375
     antecedents:
     - not: 0
